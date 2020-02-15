@@ -291,8 +291,12 @@ body {
       outline: none;
     }
 
-    & .icons a{
-      color: #1a173b;
+    & .icons {
+        white-space: nowrap;
+      &  a{
+        color: #1a173b;
+      }
+      
     }
   }
 
@@ -305,10 +309,18 @@ body {
 
     &-left {
       padding-right: .75%;
+
+      @include respond(tablet) {
+        width: 100%!important;
+       }
     }
 
     &-right {
       padding-left: .75%;
+
+      @include respond(tablet) {
+        display: none;
+       }
     }
 
 
@@ -321,9 +333,7 @@ body {
       //margin-left: .5rem;
       //max-height: 100%!important;
 
-      @include respond(tablet) {
-       display: none;
-      }
+     
 
       &-top {
         height: 50%;
