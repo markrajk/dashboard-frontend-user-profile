@@ -136,6 +136,8 @@ body {
       .results-header .choose a {
         font-weight: 700;
         color: #1a173b; }
+    .results-header button:not(:last-of-type) {
+      margin-right: 1.3rem; }
     .results-header button {
       height: 3.5rem;
       padding: 0 1.7rem;

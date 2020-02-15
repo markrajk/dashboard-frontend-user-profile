@@ -229,6 +229,8 @@ body {
         color: #37363C;
         font-weight: 700;
       }
+
+
     }
 
     &-logout {
@@ -270,6 +272,10 @@ body {
         font-weight: 700;
         color: #1a173b;
       }
+    }
+
+    & button:not(:last-of-type) {
+      margin-right: 1.3rem;
     }
 
     & button {
