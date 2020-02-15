@@ -136,7 +136,7 @@ body {
       .results-header .choose a {
         font-weight: 700;
         color: #1a173b; }
-    .results-header button:not(:last-of-type) {
+    .results-header .buttons button:not(:last-of-type), .results-header .icons a:not(:last-of-type) {
       margin-right: 1.3rem; }
     .results-header button {
       height: 3.5rem;
@@ -147,6 +147,8 @@ body {
       border-radius: 4px;
       border: none;
       outline: none; }
+    .results-header .icons a {
+      color: #1a173b; }
   .results-body {
     font-family: "Lato", sans-serif;
     display: flex;
