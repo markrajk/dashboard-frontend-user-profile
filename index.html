@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | User profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="d-flex">
+<!-- SIDEBAR SECTION-->
+<div class="sidebar d-flex flex-column bg-white">
+    <div class="sidebar-info d-flex align-items-center">
+        <img class="sidebar-info-img" src="img/profile-pic.png" alt="profile picture">
+        <div class="d-flex flex-column">
+            <p class="sidebar-info-name m-0">Andrew<span class="align-middle"></span></p>
+            <p class="sidebar-info-title m-0">Boss</p>
+        </div>
+    </div>
+
+    <div class="sidebar-group">
+        <h3>GIVE FEEDBACK</h3>
+        <select name="sidebar-select" id="sidebar-select">
+            <option value="one">To you people</option>
+        </select>
+    </div>
+
+    <div class="sidebar-body">
+        <div class="sidebar-group">
+            <h3>TEAMS</h3>
+            <ul class="list-unstyled">
+                <li><a href="#">Results </a></li>
+                <li><a href="#">Export results </a></li>
+                <li><a href="#">Manage teams </a></li>
+                <li><a href="#">Create a new team </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>PEOPLE</h3>
+            <ul class="list-unstyled">
+                <li class="active"><a href="#">Results </a></li>
+                <li><a href="#">Export results </a></li>
+                <li><a href="#">Manage people</a></li>
+                <li><a href="#">Invite new people </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>ME</h3>
+            <ul class="list-unstyled">
+                <li><a href="#">Results </a></li>
+                <li><a href="#">My account </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-group">
+            <h3>ADMIN</h3>
+            <ul class="list-unstyled">
+                <li><a href="#">User/team register </a></li>
+                <li><a href="#">Company Profile </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- RESULTS SECTION -->
+    <div class="results">
+        <div class="results-header">
+            <div class="results-header-logout d-flex justify-content-between">
+                <p class="mb-0 d-flex align-items-center"><i class="material-icons">keyboard_arrow_left</i>Back</p>
+                <p class="text-right align-middle"><a href="#">Logout</a> <i
+                        class="material-icons align-middle">exit_to_app</i></p>
+            </div>
+            <h2 class="mt-1 align-middle">Angelo Merte</h2>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <!-- <p class="choose"><span><a href="#">My key people</a></span><span class="mx-2 divider"> I </span>All people</p> -->
+               <div class="profile-info d-flex">
+                <p class="m-0 profile-info-team mr-4"><span class="mr-1">Team:</span> Javascript Development</p>
+                <p class="m-0 profile-info-position"><span class="mr-1">Position:</span> Junior Developer</p>
+               </div>
+
+                <div>
+                    <button>Export</button>
+                    <button>Settings</button>
+                    <button>Add to my key people</button>
+                </div>
+                <!-- <button>Remove from my key people</button> -->
+            </div>
+            <!-- <p class="choose"><span>My key people </span><span class="px-1">|</span> All people</p> -->
+            <!-- <div class="results-header-search">
+                <div class="input-group h-100">
+                    <i class="material-icons">search</i>
+                    <input class="m-auto" type="text" placeholder="Search...">
+                </div>
+            </div> -->
+        </div>
+
+        <div class="results-body">
+            <div class="results-body-left">
+                <div class="results-body-left-top">
+                    <div class="graph-card bg-white graph-team-marketing">
+                        <div class="graph-card-header d-flex justify-content-between">
+                           <div>
+                            <h3 class="text-truncate mr-2"><span>Colleagues feedback</span></h3>
+                            <p class="choose"><a href="#">Weeks</a><span class="mx-2"> I </span> <span class="active"><a href="#">Months</a></span> </p>
+                           </div>
+                           <a class="share" href="#">Export<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">DEC</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-body-left-bottom">
+                        <div class="right-container">
+                            <div class="results-body-left-bottom-header">
+                                <p class="choose text-truncate mr-2"><span class="active"><a href="#">Improvement Ideas</a></span></p>
+                                <select name="comment" id="comment">
+                                    <option value="april" selected>April</option>
+                                    <option value="april">May</option>
+                                    <option value="april">Jun</option>
+                                </select>
+
+                                <!-- <a class="share" href="#">April<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a> -->
+                            </div>
+                            <div class="results-body-left-bottom-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        I think the best solution is to kill our enemies first and then start our launch.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem, ipsum dolor.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="results-body-right">
+                <div class="results-body-right-top">
+                    <div class="graph-card bg-white graph-team-marketing">
+                        <div class="graph-card-header d-flex justify-content-between">
+                           <div>
+                            <h3 class="text-truncate mr-2"><span>Bosses feedback</span></h3>
+                            <p class="choose"><a href="#">Weeks</a><span class="mx-2"> I </span> <span class="active"><a href="#">Months</a></span> </p>
+                           </div>
+                           <a class="share" href="#">Export<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a>
+                        </div>
+                        <div class="graph-card-body">
+                            <div class="bar d-none d-xl-block">
+                                <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                <div class="bar-info">JAN</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                <div class="bar-info">FEB</div>
+                            </div>
+                            <div class="bar d-none d-lg-block">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">MAR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">APR</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                <div class="bar-info">MAY</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">JUN</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                <div class="bar-info">JUL</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">AUG</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 76%;"></div>
+                                <div class="bar-info">SEP</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                <div class="bar-info">OCT</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                <div class="bar-info">NOV</div>
+                            </div>
+                            <!-- <div class="bar">
+                                <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                <div class="bar-info">DEC</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-body-right-bottom">
+                        <div class="right-container">
+                            <div class="results-body-right-bottom-header">
+                                <p class="choose text-truncate mr-2"><span class="active"><a href="#">Compliments</a></span></p>
+                                <select name="comment" id="comment">
+                                    <option value="april" selected>April</option>
+                                    <option value="april">May</option>
+                                    <option value="april">Jun</option>
+                                </select>
+
+                                <!-- <a class="share" href="#">April<i class="material-icons align-middle ml-1">keyboard_arrow_down</i></a> -->
+                            </div>
+                            <div class="results-body-right-bottom-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        I think the best solution is to kill our enemies first and then start our launch.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem, ipsum dolor.
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="m-0 p-0">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
